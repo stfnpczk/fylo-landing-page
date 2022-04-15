@@ -1,17 +1,42 @@
 /*----------------------------
       layout
  ----------------------------*/
-  
-  
-  
+
 /*----------------------------
-      ??? section
+      header section
 ----------------------------*/
-  
-  
-  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 103px;
+
+  &__logo img {
+    width: 80px;
+    width: clamp(80px, 21.3333333333vw, 166px);
+  }
+
+  &__nav-items {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    font-family: Raleway;
+    font-size: clamp(12px, 3.2vw, 16px);
+    line-height: clamp(14px, 3.7333333333vw, 18.78px);
+    color: $v-dark-blue;
+  }
+}
+
+/*----------------------------
+      productive section 
+----------------------------*/
+
+/*----------------------------
+      cta section 
+----------------------------*/
+
 /*----------------------------
       footer section 
 ----------------------------*/
-  
-  

@@ -30,6 +30,37 @@
 }
 
 /*----------------------------
+      hero section 
+----------------------------*/
+.hero {
+  margin: 0 28px 90px;
+
+  &__content {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    margin: 24px 0 32px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  
+}
+
+/*----------------------------
       productive section 
 ----------------------------*/
 

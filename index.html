@@ -16,9 +16,41 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header></header>
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+
+        <nav class="header__navigation">
+          <ul class="header__nav-items">
+            <li>
+              <a class="header__link" href="#">Features</a>
+            </li>
+            <li>
+              <a class="header__link" href="#">Team</a>
+            </li>
+            <li>
+              <a class="header__link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main>
-        <section></section>
+        <section class="hero">
+          <div class="hero-image">
+            <img src="./images/illustration-1.svg" alt="">
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__heading">All your files in one secure location, accessible anywhere.</h1>
+            <p class="hero__paragraph">Fylo stores your most important files in one secure location. 
+              Access them wherever you need, share and collaborate with friends, 
+              family, and co-workers.</p>
+              <form class="hero__form" id="form" action="#"> 
+                <input class="input"  type="email" placeholder="Enter your email" name="email" id="email" >
+                <button class="button" type="submit" aria-label="submit email" >Get Started</button>
+              </form>
+          </div>
+        </section>
         <section></section>
         <section></section>
       </main>

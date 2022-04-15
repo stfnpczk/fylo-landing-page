@@ -18,7 +18,7 @@
     <div class="page-wrapper">
       <header class="header">
         <div class="header__logo">
-          <img src="./images/logo.svg" alt="">
+          <img src="./images/logo.svg" alt="" />
         </div>
 
         <nav class="header__navigation">
@@ -38,20 +38,117 @@
       <main>
         <section class="hero">
           <div class="hero-image">
-            <img src="./images/illustration-1.svg" alt="">
+            <img src="./images/illustration-1.svg" alt="" />
           </div>
           <div class="hero__content">
-            <h1 class="hero__heading">All your files in one secure location, accessible anywhere.</h1>
-            <p class="hero__paragraph">Fylo stores your most important files in one secure location. 
-              Access them wherever you need, share and collaborate with friends, 
-              family, and co-workers.</p>
-              <form class="hero__form" id="form" action="#"> 
-                <input class="input"  type="email" placeholder="Enter your email" name="email" id="email" >
-                <button class="button" type="submit" aria-label="submit email" >Get Started</button>
-              </form>
+            <h1 class="hero__heading">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="hero__paragraph">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form class="hero__form" id="form" action="#">
+              <input
+                class="input"
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+              />
+              <button class="button" type="submit" aria-label="submit email">
+                Get Started
+              </button>
+            </form>
           </div>
         </section>
-        <section></section>
+
+        <section class="productive">
+          <div class="productive__container">
+            <div class="productive__image-container">
+              <img src="./images/illustration-2.svg" alt="" />
+            </div>
+
+            <div class="productive__content">
+              <h2 class="productive__heading">
+                Stay productive, wherever you are
+              </h2>
+              <p class="productive__paragraph">
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p class="productive__paragraph productive__paragraph--two">
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p>
+              <a class="productive__link" href="#"
+                >See how Fylo works
+                <svg
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <circle id="b" cx="6" cy="6" r="6" />
+                    <filter
+                      x="-25%"
+                      y="-25%"
+                      width="150%"
+                      height="150%"
+                      filterUnits="objectBoundingBox"
+                      id="a"
+                    >
+                      <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                      <feGaussianBlur
+                        stdDeviation="1"
+                        in="shadowOffsetOuter1"
+                        result="shadowBlurOuter1"
+                      />
+                      <feColorMatrix
+                        values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                        in="shadowBlurOuter1"
+                      />
+                    </filter>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(2 2)">
+                      <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                      <use fill="#3DA08F" xlink:href="#b" />
+                    </g>
+                    <path
+                      d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                      fill="#FFF"
+                    />
+                  </g>
+                </svg>
+              </a>
+
+              <div class="productive__testimonial">
+                <p class="productive__paragraph-comment">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div class="productive__profile">
+                  <div class="productive__avatar">
+                    <img src="./images/avatar-testimonial.jpg" alt="" />
+                  </div>
+
+                  <div>
+                    <em class="productive__name"> Kyle Burton</em>
+                    <small class="productive__company"
+                      >Founder & CEO, Huddle</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section></section>
       </main>
       <footer></footer>

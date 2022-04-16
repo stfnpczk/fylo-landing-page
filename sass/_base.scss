@@ -42,4 +42,9 @@ a {
     cursor: pointer;
   }
 
+input {
+  border: none;
+  // all: unset;
+}
+
 $desktop: 770px;

@@ -225,3 +225,72 @@
 /*----------------------------
       footer section 
 ----------------------------*/
+.footer {
+  background: $v-dark-blue;
+  padding: 65px 39px 42px;
+
+  &__icon-container img {
+    // fill: #ffffff;
+    width: 105px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0;
+    gap: 16px;
+    // color: $white;
+  }
+
+  &__contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    // margin: 16px 0 0;
+  }
+
+  &__navigation {
+    align-self: flex-start;
+  }
+
+  &__nav-items a {
+    // color: $white;
+    display: block;
+    margin: 0 0 16px;
+  }
+
+  &__nav-item--two {
+    margin: 32px 0 0;
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__sm-link {
+    display: flex;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    color: white;
+    border: 0.0625rem solid white;
+    border-radius: 50%;
+  }
+
+  &__sm-icon {
+    font-size: 12px;
+  }
+}

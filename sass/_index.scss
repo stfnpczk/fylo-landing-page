@@ -9,7 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 24px 89px;
+
+  // padding: 24px 24px 89px;
+  padding: clamp(24px, 6.4vw, 65px) clamp(24px, 6.4vw, 80px);
 
   &__logo img {
     width: 80px;
@@ -18,7 +20,7 @@
 
   &__nav-items {
     display: flex;
-    gap: 24px;
+    gap: clamp(24px, 6.4vw, 57px);
   }
 
   &__link {

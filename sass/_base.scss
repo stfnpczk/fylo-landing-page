@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 h1,
@@ -26,8 +26,8 @@ h6 {
 }
 
 p {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: clamp(14px, 3.7333333333vw, 17px);
+  line-height: clamp(21px, 5.6vw, 24px);
   font-weight: 400;
 }
 
@@ -47,4 +47,4 @@ input {
   // all: unset;
 }
 
-$desktop: 770px;
+$desktop: 1000px;

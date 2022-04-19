@@ -42,7 +42,7 @@
   margin: 0 28px 170px;
 
   @media only screen and (min-width: 1440px) {
-    margin: 0 80px 164px;
+    margin: 0 80px 254px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -136,8 +136,6 @@
     }
   }
 
-  
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -192,7 +190,6 @@
     margin: 40px 0 0;
     padding: 30.5px 26px;
     width: clamp(228px, 60.8vw, 304px);
-
   }
 
   &__paragraph-comment::before {
@@ -241,14 +238,32 @@
 .cta {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   background: $desaturated-blue;
   color: $white;
   text-align: center;
   padding: 54px 48px 71px;
 
+  @media only screen and (min-width: $desktop) {
+    flex-direction: row;
+    text-align: left;
+    padding: 100px 80px 85px;
+    // gap: 50px;
+  }
+
+  &__description {
+    flex: 0 0 41%;
+  }
+
   &__heading {
     font-size: 18px;
     line-height: 24px;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 32px;
+      line-height: 48px;
+    }
   }
 
   &__paragraph {
@@ -258,8 +273,15 @@
   &__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 12px;
+    padding: 0 66px;
+
+    @media only screen and (min-width: $desktop) {
+      padding: 0;
+      flex: 0 0 37%;
+      // width: 100%;
+    }
   }
 
   &__input {
@@ -271,8 +293,12 @@
     line-height: 14px;
     color: #c0c0c0;
 
-    width: clamp(232px, 61.8666666667vw, 61.8666666667vw);
-    padding: 11px 0 11px 8px;
+    // width: clamp(232px, 61.8666666667vw, 61.8666666667vw);
+    padding: 9px 8px;
+
+    @media only screen and (min-width: $desktop) {
+      padding: 17px 18px;
+    }
   }
 
   &__button {
@@ -281,12 +307,17 @@
     border-radius: 3.125px;
 
     font-family: Raleway;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 16px;
 
-    width: clamp(240px, 64vw, 64vw);
-    padding: 11px 0;
+    padding: 9px 8px;
+
+    @media only screen and (min-width: $desktop) {
+      align-self: flex-start;
+      width: 42.25%;
+      padding: 16px 0;
+    }
   }
 }
 

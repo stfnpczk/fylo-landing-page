@@ -328,8 +328,11 @@
   background: $v-dark-blue;
   padding: 65px 39px 42px;
 
+  @media only screen and (min-width: $desktop) {
+    padding: 6.3888888889vw 5.5555555556vw 5.9722222222vw;
+  }
+
   &__icon-container img {
-    // fill: #ffffff;
     width: 105px;
   }
 
@@ -341,6 +344,12 @@
     font-size: 16px;
     line-height: 24px;
     color: $white;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 36px 0 0;
+    }
   }
 
   &__contact {
@@ -348,6 +357,10 @@
     flex-direction: column;
     margin: 32px 0 0;
     gap: 16px;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 0;
+    }
   }
 
   &__contact-item {
@@ -357,7 +370,20 @@
   }
 
   &__navigation {
-    align-self: flex-start;
+    // align-self: flex-start;
+
+    @media only screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__nav-items {
+    @media only screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 13.8888888889vw;
+    }
   }
 
   &__nav-items a {
@@ -367,6 +393,10 @@
 
   &__nav-item--two {
     margin: 32px 0 0;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 0;
+    }
   }
 
   &__social-media {

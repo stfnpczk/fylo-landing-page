@@ -91,6 +91,24 @@
 
     @media only screen and (min-width: $desktop) {
       flex-direction: row;
+      position: relative;
+    }
+  }
+
+  &__error-message {
+    display: none;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+    color: #ef4877;
+    margin: -11px 0 0;
+
+    @media only screen and (min-width: $desktop) {
+      position: absolute;
+      top: 57px;
+      margin: 0 0 0 1px;
     }
   }
 }
@@ -299,6 +317,15 @@
     @media only screen and (min-width: $desktop) {
       padding: 17px 18px;
     }
+  }
+
+  &__error-message {
+    display: none;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.40000003576278687px;
+    margin: -8px 0 0 ;
   }
 
   &__button {

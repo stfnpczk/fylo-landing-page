@@ -17,6 +17,7 @@
       src="https://kit.fontawesome.com/2b4ecf7295.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -53,14 +54,15 @@
               Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
             </p>
-            <form class="hero__form" id="form" action="#">
+            <form class="hero__form js-form" action="#">
               <input
                 class="input"
-                type="email"
                 placeholder="Enter your email"
                 name="email"
-                id="email"
               />
+              <small class="hero__error-message js-error-message">
+                Please check your email
+              </small>
               <button class="button" type="submit" aria-label="submit email">
                 Get Started
               </button>
@@ -163,13 +165,15 @@
             </p>
           </div>
 
-          <form class="cta__form" action="#">
+          <form class="cta__form js-form" action="#">
             <input
               class="cta__input"
-              type="email"
               placeholder="email@example.com"
               name="email"
             />
+            <small class="cta__error-message js-error-message">
+              Please check your email
+            </small>
             <button class="cta__button" type="submit" aria-label="submit email">
               Get Started For Free
             </button>

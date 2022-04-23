@@ -1,7 +1,13 @@
 /*----------------------------
       layout
  ----------------------------*/
-
+body {
+  display: flex;
+  justify-content: center;
+}
+.page-wrapper {
+  max-width: 1650px;
+}
 /*----------------------------
       header section
 ----------------------------*/
@@ -10,7 +16,6 @@
   justify-content: space-between;
   align-items: center;
 
-  // padding: 24px 24px 89px;
   padding: clamp(24px, 6.4vw, 65px) clamp(24px, 6.4vw, 80px) 98px;
 
   @media only screen and (min-width: $desktop) {
@@ -62,6 +67,8 @@
   }
 
   &__image {
+    max-width: 600px;
+    margin: 0 auto;
     @media only screen and (min-width: $desktop) {
       flex: 0 0 50%;
       align-self: center;
@@ -88,10 +95,31 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
 
     @media only screen and (min-width: $desktop) {
       flex-direction: row;
       position: relative;
+      max-width: unset;
+      margin: unset;
+    }
+  }
+
+  &__input {
+    padding: 14px 21px;
+
+    @media only screen and (min-width: $desktop) {
+      @media only screen and (min-width: $desktop) {
+        flex: 0 0 47%;
+      }
+    }
+  }
+
+  &__button {
+    padding: 12px;
+    @media only screen and (min-width: $desktop) {
+      flex: 0 0 34%;
     }
   }
 
@@ -120,15 +148,16 @@
 .productive::before {
   position: absolute;
   content: "";
-  top: -60px;
+  top: -65px;
   width: 100vw;
-  height: 60px;
+  height: 65px;
   background: url(../images/bg-curve-mobile.svg) no-repeat;
   background-size: cover;
 
   @media only screen and (min-width: $desktop) {
     background: url(../images/bg-curve-desktop.svg) no-repeat;
     background-size: cover;
+    width: 100%;
     top: -81px;
     height: 81px;
   }
@@ -152,6 +181,11 @@
       gap: 70px;
       flex-direction: row-reverse;
     }
+  }
+
+  &__image-container {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   &__content {
@@ -195,9 +229,16 @@
     border-bottom: 1px solid $moderate-cyan;
     padding: 0 0 6px;
 
+    transition: 0.3s ease-in;
+
     @media only screen and (min-width: $desktop) {
       align-self: flex-start;
     }
+  }
+
+  &__link:hover {
+    color: #71dfcc;
+    border-bottom: 1px solid #71dfcc;
   }
 
   &__testimonial {
@@ -267,7 +308,6 @@
     flex-direction: row;
     text-align: left;
     padding: 100px 80px 85px;
-    // gap: 50px;
   }
 
   &__description {
@@ -293,25 +333,15 @@
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-    padding: 0 66px;
+    padding: 0 clamp(40px, 10.6666666667vw, 40px);
 
     @media only screen and (min-width: $desktop) {
       padding: 0;
       flex: 0 0 37%;
-      // width: 100%;
     }
   }
 
   &__input {
-    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
-    border-radius: 3.125px;
-
-    font-family: Raleway;
-    font-size: 12px;
-    line-height: 14px;
-    color: #c0c0c0;
-
-    // width: clamp(232px, 61.8666666667vw, 61.8666666667vw);
     padding: 9px 8px;
 
     @media only screen and (min-width: $desktop) {
@@ -325,7 +355,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.40000003576278687px;
-    margin: -8px 0 0 ;
+    margin: -8px 0 0;
   }
 
   &__button {
@@ -342,7 +372,8 @@
 
     @media only screen and (min-width: $desktop) {
       align-self: flex-start;
-      width: 42.25%;
+      // width: 42.25%;
+      width: 60.25%;
       padding: 16px 0;
     }
   }
@@ -397,8 +428,6 @@
   }
 
   &__navigation {
-    // align-self: flex-start;
-
     @media only screen and (min-width: $desktop) {
       display: flex;
       flex-direction: row;
@@ -416,6 +445,11 @@
   &__nav-items a {
     display: block;
     margin: 0 0 16px;
+    transition: 0.3s ease-in;
+  }
+
+  &__nav-link:hover {
+    color: #6c9bff;
   }
 
   &__nav-item--two {
@@ -441,6 +475,12 @@
     color: white;
     border: 0.0625rem solid white;
     border-radius: 50%;
+    transition: 0.3s ease-in;
+  }
+
+  &__sm-link:hover {
+    color: #6c9bff;
+    border: 0.0625rem solid #6c9bff;
   }
 
   &__sm-icon {

@@ -4,32 +4,33 @@
   border: 0.625px solid $v-dark-blue;
   border-radius: 3.125px;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
-  font-size: clamp(12px, 3.2vw, 14px);
-  line-height: clamp(14px, 3.7333333333vw, 19px );
-  font-family: Raleway;
-  letter-spacing: 0.36923080682754517px;
-  padding: 14px 21px;
 
-@media only screen and (min-width: $desktop) {
-  flex: 0 0 47%;
-  // width: 320px;
+  font-family: Raleway;
+  font-size: clamp(12px, 3.2vw, 14px);
+  line-height: clamp(14px, 3.7333333333vw, 19px);
+  letter-spacing: 0.36923080682754517px;
+  color: $v-dark-blue;
 }
 
+input:invalid {
+  border-color: #ef4877;
 }
 
 .button {
   background: $bright-blue;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
   border-radius: 3.125px;
-  padding: 12px;
   font-family: Raleway;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: $white;
+}
 
-  @media only screen and (min-width: $desktop) {
-    flex: 0 0 34%;
+button {
+  transition: 0.3s ease-in;
+}
 
-  }
+button:hover {
+  background-color: #6c9bff;
 }
